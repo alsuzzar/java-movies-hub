@@ -100,7 +100,7 @@ public class MoviesApiTest {
 
         String json =
                 "{\n" +
-                        "  \"title\": " +
+                        "  \"title\": \"\",\n" +
                         "  \"year\": 1999\n" +
                         "}";
         HttpRequest req1 = HttpRequest.newBuilder()
@@ -192,7 +192,7 @@ public class MoviesApiTest {
 
         String json =
                 "{\n" +
-                        "  \"title\": " +
+                        "  \"title\": \"\",\n" +
                         "  \"year\": 1999\n" +
                         "}";
         HttpRequest req1 = HttpRequest.newBuilder()
@@ -236,7 +236,7 @@ public class MoviesApiTest {
 
         String json =
                 "{\n" +
-                        "  \"title\": " +
+                        "  \"title\": \"\",\n" +
                         "  \"year\": 1799\n" +
                         "}";
         HttpRequest req1 = HttpRequest.newBuilder()
@@ -262,7 +262,7 @@ public class MoviesApiTest {
 
         String json =
                 "{\n" +
-                        "  \"title\": " +
+                        "  \"title\": \"\",\n" +
                         "  \"year\": 1999\n" +
                         "}";
         HttpRequest req1 = HttpRequest.newBuilder()
