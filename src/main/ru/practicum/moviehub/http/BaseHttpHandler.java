@@ -7,7 +7,6 @@ import com.sun.net.httpserver.HttpExchange;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.io.OutputStream;
-import java.util.List;
 
 import com.google.gson.Gson;
 import ru.practicum.moviehub.api.ErrorData;
@@ -40,5 +39,6 @@ abstract class BaseHttpHandler implements HttpHandler {
 
     protected void sendNoContent(HttpExchange ex) throws java.io.IOException {
         ex.getResponseHeaders().set("Content-Type", CT_JSON);
-        ex.sendResponseHeaders(204, -1);    }
+        ex.sendResponseHeaders(204, -1);
+    }
 }
