@@ -12,9 +12,9 @@ import java.nio.charset.StandardCharsets;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class MoviesPostTests extends MoviesTestBaseClass{
+public class MoviesPostTests extends MoviesTestBaseClass {
     @Test
-    void shouldPostMovies() throws Exception{
+    void shouldPostMovies() throws Exception {
 
         String json =
                 "{\n" +
@@ -45,7 +45,7 @@ public class MoviesPostTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHandleEmptyTitle() throws Exception{
+    void shouldHandleEmptyTitle() throws Exception {
 
         String json =
                 "{\n" +
@@ -64,7 +64,7 @@ public class MoviesPostTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHandleTooLongTitle() throws Exception{
+    void shouldHandleTooLongTitle() throws Exception {
 
         String longTitle =
                 "aaaaaaaaaa" +
@@ -99,7 +99,7 @@ public class MoviesPostTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHandleIncorrectYearInPast() throws Exception{
+    void shouldHandleIncorrectYearInPast() throws Exception {
 
         String json =
                 "{\n" +
@@ -118,7 +118,7 @@ public class MoviesPostTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHandleIncorrectYearInFuture() throws Exception{
+    void shouldHandleIncorrectYearInFuture() throws Exception {
 
         String json =
                 "{\n" +
@@ -137,7 +137,7 @@ public class MoviesPostTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHaveErrorDataWhenTitle422() throws Exception{
+    void shouldHaveErrorDataWhenTitle422() throws Exception {
 
         String json =
                 "{\n" +
@@ -161,7 +161,7 @@ public class MoviesPostTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHaveErrorDataWhenYear422() throws Exception{
+    void shouldHaveErrorDataWhenYear422() throws Exception {
 
         String json =
                 "{\n" +
@@ -184,7 +184,7 @@ public class MoviesPostTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHandleSeveralErrors() throws Exception{
+    void shouldHandleSeveralErrors() throws Exception {
 
         String json =
                 "{\n" +
@@ -209,7 +209,7 @@ public class MoviesPostTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHandleSingleError() throws Exception{
+    void shouldHandleSingleError() throws Exception {
 
         String json =
                 "{\n" +

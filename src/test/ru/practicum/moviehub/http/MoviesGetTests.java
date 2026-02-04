@@ -10,11 +10,11 @@ import java.nio.charset.StandardCharsets;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MoviesGetTests extends MoviesTestBaseClass{
+public class MoviesGetTests extends MoviesTestBaseClass {
 
 
     @Test
-    void shouldGetMovieById() throws Exception{
+    void shouldGetMovieById() throws Exception {
         String json =
                 "{\n" +
                         "  \"title\": \"Matrix\",\n" +
@@ -50,7 +50,7 @@ public class MoviesGetTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHandleIfMovieByIdNotFound() throws Exception{
+    void shouldHandleIfMovieByIdNotFound() throws Exception {
 
         HttpRequest get = HttpRequest.newBuilder()
                 .uri(URI.create(BASE + "/movies/1"))
@@ -64,7 +64,7 @@ public class MoviesGetTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHandleIfIdNotInt() throws Exception{
+    void shouldHandleIfIdNotInt() throws Exception {
 
         HttpRequest get = HttpRequest.newBuilder()
                 .uri(URI.create(BASE + "/movies/abc"))
@@ -78,7 +78,7 @@ public class MoviesGetTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldGetMoviesOfCertainYear() throws Exception{
+    void shouldGetMoviesOfCertainYear() throws Exception {
         String json1 =
                 "{\n" +
                         "  \"title\": \"Matrix\",\n" +
@@ -166,7 +166,7 @@ public class MoviesGetTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHandleIncorrectYear() throws Exception{
+    void shouldHandleIncorrectYear() throws Exception {
         String json1 =
                 "{\n" +
                         "  \"title\": \"Matrix\",\n" +
@@ -245,7 +245,7 @@ public class MoviesGetTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldGetMoviesByYear_whenEmpty_returnsEmptyArray() throws Exception{
+    void shouldGetMoviesByYear_whenEmpty_returnsEmptyArray() throws Exception {
         String json1 =
                 "{\n" +
                         "  \"title\": \"Matrix\",\n" +
