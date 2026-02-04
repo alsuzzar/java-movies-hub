@@ -14,7 +14,7 @@ public class MoviesGetTests extends MoviesTestBaseClass{
 
 
     @Test
-    void shouldGetMovieById() throws Exception {
+    void shouldGetMovieById() throws Exception{
         String json =
                 "{\n" +
                         "  \"title\": \"Matrix\",\n" +
@@ -50,7 +50,7 @@ public class MoviesGetTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHandleIfMovieByIdNotFound() throws Exception {
+    void shouldHandleIfMovieByIdNotFound() throws Exception{
 
         HttpRequest get = HttpRequest.newBuilder()
                 .uri(URI.create(BASE + "/movies/1"))
@@ -78,7 +78,7 @@ public class MoviesGetTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldGetMoviesOfCertainYear() throws Exception {
+    void shouldGetMoviesOfCertainYear() throws Exception{
         String json1 =
                 "{\n" +
                         "  \"title\": \"Matrix\",\n" +
@@ -166,7 +166,7 @@ public class MoviesGetTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHandleIncorrectYear() throws Exception { //dodelat!
+    void shouldHandleIncorrectYear() throws Exception{
         String json1 =
                 "{\n" +
                         "  \"title\": \"Matrix\",\n" +
@@ -245,7 +245,7 @@ public class MoviesGetTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldGetMoviesByYear_whenEmpty_returnsEmptyArray() throws Exception { //dodelat!
+    void shouldGetMoviesByYear_whenEmpty_returnsEmptyArray() throws Exception{
         String json1 =
                 "{\n" +
                         "  \"title\": \"Matrix\",\n" +

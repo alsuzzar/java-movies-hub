@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MoviesDeleteTests extends MoviesTestBaseClass{
     @Test
-    void shouldReturn204WhenDeleteMovieById() throws Exception {
+    void shouldReturn204WhenDeleteMovieById() throws Exception{
         String json =
                 "{\n" +
                         "  \"title\": \"Matrix\",\n" +
@@ -41,7 +41,7 @@ public class MoviesDeleteTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldDeleteMovieById() throws Exception {
+    void shouldDeleteMovieById() throws Exception{
         String json =
                 "{\n" +
                         "  \"title\": \"Matrix\",\n" +
@@ -80,7 +80,7 @@ public class MoviesDeleteTests extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHandleIncorrectIdForDelete() throws Exception {
+    void shouldHandleIncorrectIdForDelete() throws Exception{
         String json =
                 "{\n" +
                         "  \"title\": \"Matrix\",\n" +

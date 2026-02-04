@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MoviesApiTest extends MoviesTestBaseClass{
 
     @Test
-    void shouldGetMovies_whenEmpty_returnsEmptyArray() throws Exception {
+    void shouldGetMovies_whenEmpty_returnsEmptyArray() throws Exception{
         HttpRequest req = HttpRequest.newBuilder()
                 .uri(URI.create(BASE + "/movies"))
                 .GET()
@@ -36,7 +36,7 @@ public class MoviesApiTest extends MoviesTestBaseClass{
     }
 
     @Test
-    void shouldHandleWrongContentType() throws Exception {
+    void shouldHandleWrongContentType() throws Exception{
 
         String json =
                 "{\n" +
